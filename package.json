@@ -12,6 +12,7 @@
     "@heroicons/react": "^1.0.6",
     "@tailwindcss/forms": "^0.5.2",
     "next": "12.1.6",
+    "node-fetch": "^3.2.4",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "swr": "^1.3.0",
@@ -30,6 +31,6 @@
     "semi": true,
     "singleQuote": true,
     "jsxSingleQuote": true,
-    "printWidth": 100
+    "printWidth": 80
   }
 }

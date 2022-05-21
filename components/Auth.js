@@ -8,7 +8,7 @@ const cookie = new Cookie();
 
 /**
  * Authｺﾝﾎﾟｰﾈﾝﾄ
- * @returns ﾛｸﾞｲﾝｺﾝﾎﾟｰﾈﾝﾄ
+ * @returns 認証ｺﾝﾎﾟｰﾈﾝﾄ
  */
 export default function Auth() {
   const router = useRouter();
@@ -24,13 +24,16 @@ export default function Auth() {
   const login = async () => {
     try {
       // JWTｱｸｾｽﾄｰｸﾝ取得
-      await fetch(`${process.env.NEXT_PUBLIC_RESTAPI_URL}api/auth/jwt/create/`, {
-        method: 'POST',
-        body: JSON.stringify({ username: username, password: password }),
-        headers: {
-          'Content-Type': 'application/json',
+      await fetch(
+        `${process.env.NEXT_PUBLIC_RESTAPI_URL}api/auth/jwt/create/`,
+        {
+          method: 'POST',
+          body: JSON.stringify({ username: username, password: password }),
+          headers: {
+            'Content-Type': 'application/json',
+          },
         },
-      })
+      )
         // 失敗時ｴﾗｰﾒｯｾｰｼﾞ
         .then((res) => {
           if (res.status === 400) {
@@ -87,6 +90,7 @@ export default function Auth() {
     }
   };
 
+  // 認証ﾋﾞｭｰ
   return (
     <div className='max-w-md w-full space-y-8'>
       <div>

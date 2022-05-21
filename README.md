@@ -29,7 +29,10 @@ Tailwind CSS 3.0 を導入
 
   ```js
   module.exports = {
-    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx}',
+      './components/**/*.{js,ts,jsx,tsx}',
+    ],
     theme: {
       extend: {},
     },
@@ -55,8 +58,12 @@ Tailwind CSS 3.0 を導入
 - components
   - Layout.js
   - Auth.js
+- ## lib
 - pages
   - index.js
+  - main-page.js
+  - blog-page.js
+  - task-page.js
 - styles
   - globals.css
 - tailwind.config.js
@@ -71,7 +78,7 @@ Tailwind CSS 3.0 を導入
     "semi": true,// セミコロンあり
     "singleQuote": true,// シングルクォーテーションに統一
     "jsxSingleQuote": true,//jsx もシングルクォーテーションに統一
-    "printWidth": 100 // １ 行の最大文字数 100
+    "printWidth": 80 // １ 行の最大文字数 80
   },
   ```
 
@@ -92,14 +99,16 @@ Tailwind CSS 3.0 を導入
   $ npm install @heroicons/react
   ```
 
-- Cookie & useSWR
+- Cookie & useSWR（Clientside data fetching）
 
   ```
-  クッキー
   $ npm i universal-cookie
-
-  クライアント側のデータフェッチ
   $ npm i swr
+  ```
+
+* node-fetch（Serverside data fetching）
+  ```
+  $ npm install node-fetch
   ```
 
 ## 参考文献
