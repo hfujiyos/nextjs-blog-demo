@@ -29,7 +29,10 @@ Tailwind CSS 3.0 を導入
 
   ```js
   module.exports = {
-    content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+    content: [
+      './pages/**/*.{js,ts,jsx,tsx}',
+      './components/**/*.{js,ts,jsx,tsx}',
+    ],
     theme: {
       extend: {},
     },
@@ -50,20 +53,31 @@ Tailwind CSS 3.0 を導入
   $ npm run dev
   ```
 
-## ディレクトリ構成
+### ライブラリ追加
 
-- components
-  - Layout.js
-  - Auth.js
-- pages
-  - index.js
-- styles
-  - globals.css
-- tailwind.config.js
+- Tailwindcss UI & Heroicons
 
-### Prettier
+  ```
+  $ npm i @tailwindcss/forms
+  $ npm install @heroicons/react
+  ```
+
+- Cookie & useSWR（Clientside data fetching）
+
+  ```
+  $ npm i universal-cookie
+  $ npm i swr
+  ```
+
+- node-fetch（Serverside data fetching）
+  ```
+  $ npm install node-fetch
+  ```
+
+### VSCode
 
 - package.json
+
   ```
   "prettier": {
     "trailingComma": "all",// 末尾のカンマあり
@@ -71,8 +85,14 @@ Tailwind CSS 3.0 を導入
     "semi": true,// セミコロンあり
     "singleQuote": true,// シングルクォーテーションに統一
     "jsxSingleQuote": true,//jsx もシングルクォーテーションに統一
-    "printWidth": 100 // １ 行の最大文字数 100
+    "printWidth": 80 // １ 行の最大文字数 80
   },
+  ```
+
+- プロダクションサーバー起動
+  ```
+  $ npm run build
+  $ npm start
   ```
 
 ### GitHub
@@ -83,24 +103,34 @@ Tailwind CSS 3.0 を導入
   $ git push -u origin main
   ```
 
-## ライブラリ追加
+## ディレクトリ構成
 
-- Tailwindcss UI & Heroicons
-
-  ```
-  $ npm i @tailwindcss/forms
-  $ npm install @heroicons/react
-  ```
-
-- Cookie & useSWR
-
-  ```
-  クッキー
-  $ npm i universal-cookie
-
-  クライアント側のデータフェッチ
-  $ npm i swr
-  ```
+- components
+  - Layout.js
+  - Auth.js
+  - Post.js
+  - Task.js
+  - TaskForm.js
+- context
+  - StateContext.js
+- docdev
+  - githubflow.md
+  - tailwindcss.md
+- lib
+  - posts.js
+  - tasks.js
+- pages
+  - posts
+    - [id].js
+  - tasks
+    - [id].js
+  - index.js
+  - main-page.js
+  - blog-page.js
+  - task-page.js
+- styles
+  - globals.css
+- tailwind.config.js
 
 ## 参考文献
 

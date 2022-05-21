@@ -7,14 +7,14 @@ import Link from 'next/link';
 const cookie = new Cookie();
 
 /**
- * MainPageｺﾝﾎﾟｰﾈﾝﾄ
+ * ﾒｲﾝ画面ｺﾝﾎﾟｰﾈﾝﾄ
  * @returns ﾒｲﾝ画面ｺﾝﾎﾟｰﾈﾝﾄ
  */
 export default function MainPage() {
   const router = useRouter();
 
   /**
-   * logout関数
+   * ﾛｸﾞｱｳﾄ関数
    * @description JWTｱｸｾｽﾄｰｸﾝ削除＆ﾙｰﾄ画面遷移
    */
   const logout = () => {
@@ -22,7 +22,7 @@ export default function MainPage() {
     router.push('/');
   };
 
-  // ﾒｲﾝ画面ｺﾝﾎﾟｰﾈﾝﾄ
+  // ﾒｲﾝ画面ﾋﾞｭｰ
   return (
     <Layout title='Main page'>
       <div className='mb-10'>
