@@ -1,4 +1,5 @@
 ## NextJSプロジェクト作成
+### NextJS
 npmでNextJSプロジェクトを構築。
 
 * create-next-app
@@ -6,7 +7,7 @@ npmでNextJSプロジェクトを構築。
   $ npx create-next-app . --use-npm
   ```
 
-## Tailwind CSS
+### Tailwind CSS
 Tailwind CSS 3.0を導入
 
 * TailwindCSSインストール
@@ -45,7 +46,7 @@ Tailwind CSS 3.0を導入
   $ npm run dev
   ```
 
-### ディレクトリ構成
+## ディレクトリ構成
 * components
   * Layout.js
   * Auth.js
@@ -56,12 +57,23 @@ Tailwind CSS 3.0を導入
   * globals.css
 * tailwind.config.js
 
-<!-- ## ライブラリ追加
-* node-fetch
-  ｻｰﾊﾞｰｻｲﾄﾞのnode-fetchを利用するためﾗｲﾌﾞﾗﾘｲﾝｽﾄｰﾙ
+### git push
+* initial commit
   ```
-  $ npm install node-fetch
-  ``` -->
+  $ git remote add origin git@github.com:hfujiyos/nextjs-blog-demo.git
+  $ git push -u origin main
+  ```
+
+## ライブラリ追加
+* Tailwindcss UI
+  ```
+  $ npm i @tailwindcss/forms
+  $ npm install @heroicons/react
+  ```
 
 ## 参考文献
 * [Tailwind CSS｜Install Tailwind CSS with Next.js](https://tailwindcss.com/docs/guides/nextjs)
+* [Tailwindcss UI](https://tailwindui.com/)
+* [Tailwindcss UI｜(Sign-in and Registration](https://tailwindui.com/components/application-ui/forms/sign-in-forms)
+* [npm｜@tailwindcss/forms](https://www.npmjs.com/package/@tailwindcss/forms)
+

@@ -17,9 +17,9 @@ export default function Layout({ children, title = "Default title" }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{" "}
+          Powered by{" "}Vercel
           {/* <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" /> */}
-          <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
         </a>
       </footer>
     </div>
