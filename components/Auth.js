@@ -7,8 +7,8 @@ import { LockClosedIcon } from '@heroicons/react/solid';
 const cookie = new Cookie();
 
 /**
- * Authｺﾝﾎﾟｰﾈﾝﾄ
- * @returns 認証ｺﾝﾎﾟｰﾈﾝﾄ
+ * 認証ｺﾝﾎﾟｰﾈﾝﾄ
+ * @returns 認証ﾋﾞｭｰ
  */
 export default function Auth() {
   const router = useRouter();
@@ -17,7 +17,7 @@ export default function Auth() {
   const [isLogin, setIsLogin] = useState(true);
 
   /**
-   * login関数
+   * ﾛｸﾞｲﾝ関数
    * @return res｜ﾛｸﾞｲﾝﾚｽﾎﾟﾝｽJSON
    * @description JWTｱｸｾｽﾄｰｸﾝ取得しCookie格納
    */
@@ -54,7 +54,7 @@ export default function Auth() {
   };
 
   /**
-   * authUser関数
+   * ﾕｰｻﾞｰ認証関数
    * @return res｜ﾛｸﾞｲﾝﾚｽﾎﾟﾝｽJSON
    * @description JWTｱｸｾｽﾄｰｸﾝ取得(async/await非同期処理)
    */

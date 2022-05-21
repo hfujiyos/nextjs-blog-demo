@@ -2,8 +2,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 
 /**
- * Layoutｺﾝﾎﾟｰﾈﾝﾄ
- * @returns ﾚｲｱｳﾄｺﾝﾎﾟｰﾈﾝﾄ
+ * ﾚｲｱｳﾄｺﾝﾎﾟｰﾈﾝﾄ
+ * @returns ﾚｲｱｳﾄｺﾋﾞｭｰ
  */
 export default function Layout({ children, title = 'Default title' }) {
   // ﾚｲｱｳﾄﾋﾞｭｰ

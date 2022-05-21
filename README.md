@@ -108,15 +108,26 @@ Tailwind CSS 3.0 を導入
 - components
   - Layout.js
   - Auth.js
+  - Post.js
+  - Task.js
+  - TaskForm.js
+- context
+  - StateContext.js
 - docdev
   - githubflow.md
   - tailwindcss.md
 - lib
   - posts.js
+  - tasks.js
 - pages
+  - posts
+    - [id].js
+  - tasks
+    - [id].js
   - index.js
   - main-page.js
   - blog-page.js
+  - task-page.js
 - styles
   - globals.css
 - tailwind.config.js

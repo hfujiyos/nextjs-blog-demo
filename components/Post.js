@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 /**
- * Postｺﾝﾎﾟｰﾈﾝﾄ
- * @param post ﾎﾟｽﾄﾃﾞｰﾀ
- * @returns ﾌﾞﾛｸﾞ行ｺﾝﾎﾟｰﾈﾝﾄ
+ * ﾌﾞﾛｸﾞ行ｺﾝﾎﾟｰﾈﾝﾄ
+ * @param post ﾌﾞﾛｸﾞ情報
+ * @returns ﾌﾞﾛｸﾞ行ﾋﾞｭｰ
  */
 export default function Post({ post }) {
   // ﾌﾞﾛｸﾞ行ﾋﾞｭｰ

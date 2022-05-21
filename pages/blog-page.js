@@ -4,13 +4,13 @@ import { getAllPostsData } from '../lib/posts';
 import Post from '../components/Post';
 
 /**
- * BlogPageｺﾝﾎﾟｰﾈﾝﾄ
- * @param filteredPosts ﾌｨﾙﾀﾎﾟｽﾄﾃﾞｰﾀ
+ * ﾌﾞﾛｸﾞ一覧画面ｺﾝﾎﾟｰﾈﾝﾄ
+ * @param filteredPosts ﾌﾞﾛｸﾞ一覧（Props）
  * @returns ﾌﾞﾛｸﾞ一覧ｺﾝﾎﾟｰﾈﾝﾄ
  * @description ｻｰﾊﾞｰｻｲﾄﾞﾌｪｯﾁSSG+ISR
  */
 export default function BlogPage({ filteredPosts }) {
-  // ﾌﾞﾛｸﾞ一覧ﾋﾞｭｰ
+  // ﾌﾞﾛｸﾞ一覧画面ﾋﾞｭｰ
   return (
     <Layout title='Blog page'>
       <ul>
@@ -42,7 +42,7 @@ export default function BlogPage({ filteredPosts }) {
 
 /**
  * Propsｻｰﾊﾞｰｻｲﾄﾞ関数
- * @returns props｜filteredPosts｜ﾎﾟｽﾄ一覧JSONﾃﾞｰﾀ
+ * @returns props｜ﾌﾞﾛｸﾞ一覧（JSON）
  * @description ﾋﾞﾙﾄﾞ時にｻｰﾊﾞｰｻｲﾄﾞﾌｪｯﾁするSSG+ISR
  */
 export async function getStaticProps() {

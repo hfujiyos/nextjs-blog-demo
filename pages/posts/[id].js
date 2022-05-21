@@ -4,7 +4,7 @@ import Layout from '../../components/Layout';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
 /**
- * Blog詳細ｺﾝﾎﾟｰﾈﾝﾄ
+ * ﾌﾞﾛｸﾞ詳細ｺﾝﾎﾟｰﾈﾝﾄ
  * @param post ﾌﾞﾛｸﾞ情報（JSON）
  * @returns ﾌﾞﾛｸﾞ詳細ｺﾝﾎﾟｰﾈﾝﾄ
  * @description ｻｰﾊﾞｰｻｲﾄﾞﾌｪｯﾁSSG+ISR
@@ -12,7 +12,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 export default function Post({ post }) {
   const router = useRouter();
 
-  // Pre-fetch中はﾛｰﾃﾞｨﾝｸﾞ表示
+  // ISRﾌｫｰﾙﾊﾞｯｸや新規ﾌﾞﾛｸﾞのPre-fetch中はﾛｰﾃﾞｨﾝｸﾞ表示
   if (router.isFallback || !post) {
     return <div>Loading...</div>;
   }
@@ -52,8 +52,8 @@ export default function Post({ post }) {
 
 /**
  * Pathsｻｰﾊﾞｰｻｲﾄﾞ関数
- * @returns paths｜ID一覧
- * @returns fallback｜false:Paths以外遷移不可, true:Paths超過遷移許可
+ * @returns paths｜ﾌﾞﾛｸﾞID一覧
+ * @returns fallback｜ﾌｫｰﾙﾊﾞｯｸﾌﾗｸﾞ（false:Paths以外遷移不可, true:Paths超過遷移許可）
  * @description ﾋﾞﾙﾄﾞ時ｻｰﾊﾞｰｻｲﾄﾞ実行
  */
 export async function getStaticPaths() {
@@ -67,7 +67,7 @@ export async function getStaticPaths() {
 /**
  * Propsｻｰﾊﾞｰｻｲﾄﾞ関数
  * @param params ﾌﾞﾛｸﾞ情報
- * @returns props｜posts｜JSONﾃﾞｰﾀ
+ * @returns props｜ﾌﾞﾛｸﾞ情報（JSON）
  * @description ﾋﾞﾙﾄﾞ時にｻｰﾊﾞｰｻｲﾄﾞﾌｪｯﾁするSSG+ISR
  */
 export async function getStaticProps({ params }) {
