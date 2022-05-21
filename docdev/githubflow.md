@@ -1,5 +1,9 @@
 ## GitHubFlow
 * スクラムマスターにてプロジェクトを作成
+  ```
+  プルリクエストがマージされた後、ヘッドブランチを自動的に削除
+  ☑︎Automatically delete head branches 
+  ```
 * レビュアにてイシューを作成して開発者をアサイン
 * 開発者にて、ローカルリポジトリでmainブランチの最新のソースをプル
   ```
@@ -12,7 +16,7 @@
 * 開発者にて、イシュー用の新しいブランチを切る
   ```
   featureブランチを新規作成してブランチ切替
-  $ git checkout -b feature/funcE
+  $ git checkout -b feature/fixLoginLogic
   ```
 * 開発者にて、コーディング / コミット / プッシュ
   ```
