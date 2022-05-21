@@ -71,7 +71,6 @@ export async function getStaticPaths() {
  * @description ﾋﾞﾙﾄﾞ時にｻｰﾊﾞｰｻｲﾄﾞﾌｪｯﾁするSSG+ISR
  */
 export async function getStaticProps({ params }) {
-  //const { post: post } = await getPostData(params.id);
   const post = await getPostData(params.id);
   return {
     props: {

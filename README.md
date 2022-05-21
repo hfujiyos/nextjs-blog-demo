@@ -53,44 +53,7 @@ Tailwind CSS 3.0 を導入
   $ npm run dev
   ```
 
-## ディレクトリ構成
-
-- components
-  - Layout.js
-  - Auth.js
-- ## lib
-- pages
-  - index.js
-  - main-page.js
-  - blog-page.js
-  - task-page.js
-- styles
-  - globals.css
-- tailwind.config.js
-
-### Prettier
-
-- package.json
-  ```
-  "prettier": {
-    "trailingComma": "all",// 末尾のカンマあり
-    "tabWidth": 2,// tab の長さは半角スペース 2 つ
-    "semi": true,// セミコロンあり
-    "singleQuote": true,// シングルクォーテーションに統一
-    "jsxSingleQuote": true,//jsx もシングルクォーテーションに統一
-    "printWidth": 80 // １ 行の最大文字数 80
-  },
-  ```
-
-### GitHub
-
-- initial commit
-  ```
-  $ git remote add origin git@github.com:hfujiyos/nextjs-blog-demo.git
-  $ git push -u origin main
-  ```
-
-## ライブラリ追加
+### ライブラリ追加
 
 - Tailwindcss UI & Heroicons
 
@@ -106,10 +69,57 @@ Tailwind CSS 3.0 を導入
   $ npm i swr
   ```
 
-* node-fetch（Serverside data fetching）
+- node-fetch（Serverside data fetching）
   ```
   $ npm install node-fetch
   ```
+
+### VSCode
+
+- package.json
+
+  ```
+  "prettier": {
+    "trailingComma": "all",// 末尾のカンマあり
+    "tabWidth": 2,// tab の長さは半角スペース 2 つ
+    "semi": true,// セミコロンあり
+    "singleQuote": true,// シングルクォーテーションに統一
+    "jsxSingleQuote": true,//jsx もシングルクォーテーションに統一
+    "printWidth": 80 // １ 行の最大文字数 80
+  },
+  ```
+
+- プロダクションサーバー起動
+  ```
+  $ npm run build
+  $ npm start
+  ```
+
+### GitHub
+
+- initial commit
+  ```
+  $ git remote add origin git@github.com:hfujiyos/nextjs-blog-demo.git
+  $ git push -u origin main
+  ```
+
+## ディレクトリ構成
+
+- components
+  - Layout.js
+  - Auth.js
+- docdev
+  - githubflow.md
+  - tailwindcss.md
+- lib
+  - posts.js
+- pages
+  - index.js
+  - main-page.js
+  - blog-page.js
+- styles
+  - globals.css
+- tailwind.config.js
 
 ## 参考文献
 
